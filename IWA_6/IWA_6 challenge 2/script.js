@@ -14,7 +14,8 @@ const minuteOfDay = 00;
 const taxAsDecimal = parseInt(tax) / 100;
 console.log(taxAsDecimal);
 
-const startingAfterTax = salary * 1 - taxAsDecimal;
+// Added brackets around "1 - taxAsDecimal"
+const startingAfterTax = salary * (1 - taxAsDecimal);
 console.log(startingAfterTax);
 
 const balance = startingAfterTax - transport - food - rent;
